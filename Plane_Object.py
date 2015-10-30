@@ -3,24 +3,22 @@ __author__ = 'coyle'
 
 class PlaneObject(object):
 
-    transponderCode = 0
+    transponder_code = 0
 
     name = ''
 
-    currentLat = 0
+    current_lat = 0
 
-    currentLong = 0
+    current_long = 0
 
-    currentAltitude = 0
+    current_altitude = 0
 
-    currentVelocity = 0
+    current_velocity = 0
 
     def __init__(self, transponder_code, name, current_lat, current_long, current_altitude, current_velocity):
-        self.currentAltitude = current_altitude
-        self.currentLat = current_lat
-        self.currentLong = current_long
+        self.current_altitude = current_altitude
+        self.current_lat = current_lat
+        self.current_long = current_long
         self.name = name
-        self.transponderCode = transponder_code
-        self.currentVelocity = current_velocity
-
-
+        self.transponder_code = transponder_code
+        self.current_velocity = current_velocity
